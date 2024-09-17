@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de sociedad</title>
+</head>
+<body>
+    <h1>Reserva de sociedad</h1>
+    Rellena el siguiente formulario para reservar la 
+    sociedad para un dia en concreto
+    <form action="server" >
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+            <br>
+            <label>¿Eres socio?</label>
+            <br>
+            <input type="radio" name="socioS" id="socioS" value="S">
+            <label for="socioS">Si, soy socio</label>
+            <input type="radio" name="socioN" id="socioN" value="N">
+            <label for="socioN">No soy socio</label>
+
+            <br>
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <br>
+            <label for="pass">Contraseña</label>
+            <input type="password" id="pass">
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de la reserva</legend>
+            <label for="Edad">Edad</label>
+            <select name="edades" id="Edad">
+                <option selected>Menor de 18</option>
+                <option>Entre 18 y 65</option>
+                <option>Mayor de 65</option>
+            </select><br>
+            <label for="FechaReserva">
+                Selecciona la fecha y hora de reserva:
+            </label><br>
+            <input type="date" name="fechaR" id="FechaReserva">
+            <input type="time" name="horaR" id="HoraReserva"><br><br>
+            <textarea name="Comentarios" id="Comentarios">Comentarios
+            </textarea>
+        </fieldset>
+        <input type="checkbox" name="Accept" id="CondAccept">
+        <label for="CondAccept">Acepto las condiciones</label>
+        <br>
+        <button>ENVIAR</button>
+    </form>
+</body>
+</html>
